@@ -16,9 +16,6 @@
 			"recommended": true
 		}
 	},
-	"files": {
-		"ignore": ["cardinal-marketing/public/client/"]
-	},
 	"vcs": {
 		"enabled": true,
 		"clientKind": "git"
