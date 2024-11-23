@@ -1,0 +1,24 @@
+{
+	"name": "mockable-modules",
+	"type": "module",
+	"version": "0.0.0",
+	"description": "Easy to use mocking for ES Modules",
+	"main": "index.js",
+	"scripts": {
+		"test": "biome check && node --test"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nalanj/mockable-modules.git"
+	},
+	"keywords": ["testing", "mocking", "esmodule"],
+	"author": "Alan Johnson",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/nalanj/mockable-modules/issues"
+	},
+	"homepage": "https://github.com/nalanj/mockable-modules#readme",
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4"
+	}
+}
