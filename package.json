@@ -11,7 +11,7 @@
 	"scripts": {
 		"fix": "biome check --write",
 		"test": "biome check && node --test",
-		"citest": "biome check && node --test --reporter=node-test-github-reporter"
+		"citest": "biome check && node --test --test-reporter node-test-github-reporter"
 	},
 	"repository": {
 		"type": "git",
