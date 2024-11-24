@@ -187,3 +187,7 @@ test("a test", (t) => {
   assert.calledWith(mockFn, 5, 3);
 });
 ```
+
+## License
+
+This code is licensed under the MIT license. See LICENSE for more information.
