@@ -19,17 +19,11 @@ export function mockable(fn) {
 		return fn(...args);
 	};
 
-	wrap.override = (fn) => {
-		impl = mock.fn(fn);
+	wrap.override = (t, fn) => {
+		if (!t.after) {
+			throw new Error("tOverride requires a test context");
+		}
 
-		return fn;
-	};
-
-	wrap.clear = () => {
-		impl = undefined;
-	};
-
-	wrap.tOverride = (t, fn) => {
 		t.after(() => {
 			impl = undefined;
 		});

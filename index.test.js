@@ -6,17 +6,11 @@ test("default implementation", () => {
 	assert.deepEqual(testFn("a", "b", "c"), ["a", "b", "c"]);
 });
 
-test("tOverride implementation", (t) => {
-	const mockFn = testFn.tOverride(t, (...args) =>
+test("override implementation", (t) => {
+	const mockFn = testFn.override(t, (...args) =>
 		args.map((arg) => `${arg}, yo`),
 	);
 
 	assert.deepEqual(testFn("a", "b", "c"), ["a, yo", "b, yo", "c, yo"]);
 	assert.equal(mockFn.mock.calls.length, 1);
-});
-
-test("override implementation", () => {
-	testFn.override((...args) => args.map((arg) => `${arg}, yo`));
-	assert.deepEqual(testFn("a", "b", "c"), ["a, yo", "b, yo", "c, yo"]);
-	testFn.clear();
 });
