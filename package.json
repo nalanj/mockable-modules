@@ -5,8 +5,8 @@
 	"description": "Easy to use mocking for ES Modules",
 	"exports": {
 		".": "./index.js",
-		"./assertions.js": "./assertions.js",
-		"./assert.js": "./assert.js"
+		"./assertions": "./assertions.js",
+		"./assert": "./assert.js"
 	},
 	"scripts": {
 		"fix": "biome check --write",
