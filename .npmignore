@@ -2,3 +2,4 @@
 *.test.js
 sample-module.js
 biome.json
+CHANGELOG.md
