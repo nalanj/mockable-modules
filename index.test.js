@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { testFn } from "./test-module.js";
+import { testFn } from "./sample-module.js";
 
 test("default implementation", () => {
 	assert.deepEqual(testFn("a", "b", "c"), ["a", "b", "c"]);
