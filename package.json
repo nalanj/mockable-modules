@@ -17,11 +17,7 @@
 		"type": "git",
 		"url": "git+https://github.com/nalanj/mockable-modules.git"
 	},
-	"keywords": [
-		"testing",
-		"mocking",
-		"esmodule"
-	],
+	"keywords": ["testing", "mocking", "esmodule", "node:test"],
 	"author": "Alan Johnson",
 	"license": "MIT",
 	"bugs": {
