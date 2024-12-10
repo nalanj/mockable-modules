@@ -2,36 +2,36 @@ import { mock } from "node:test";
 
 let enabled = true;
 export function disableMockable() {
-	enabled = true;
+  enabled = true;
 }
 
 export function mockable(fn) {
-	if (!enabled) {
-		return fn;
-	}
+  if (!enabled) {
+    return fn;
+  }
 
-	let impl = undefined;
+  let impl = undefined;
 
-	const wrap = (...args) => {
-		if (impl) {
-			return impl(...args);
-		}
-		return fn(...args);
-	};
+  const wrap = (...args) => {
+    if (impl) {
+      return impl(...args);
+    }
+    return fn(...args);
+  };
 
-	wrap.override = (t, fn) => {
-		if (!t.after) {
-			throw new Error("tOverride requires a test context");
-		}
+  wrap.override = (t, fn) => {
+    if (!t.after) {
+      throw new Error("tOverride requires a test context");
+    }
 
-		t.after(() => {
-			impl = undefined;
-		});
+    t.after(() => {
+      impl = undefined;
+    });
 
-		impl = mock.fn(fn);
+    impl = mock.fn(fn);
 
-		return impl;
-	};
+    return impl;
+  };
 
-	return wrap;
+  return wrap;
 }

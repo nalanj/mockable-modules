@@ -1,31 +1,31 @@
 {
-	"name": "mockable-modules",
-	"type": "module",
-	"version": "1.0.0",
-	"description": "Easy to use mocking for ES Modules",
-	"exports": {
-		".": "./index.js",
-		"./assertions": "./assertions.js",
-		"./assert": "./assert.js"
-	},
-	"scripts": {
-		"fix": "biome check --write",
-		"test": "biome check && node --test",
-		"citest": "biome check && node --test --test-reporter node-test-github-reporter"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/nalanj/mockable-modules.git"
-	},
-	"keywords": ["testing", "mocking", "esmodule", "node:test"],
-	"author": "Alan Johnson",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/nalanj/mockable-modules/issues"
-	},
-	"homepage": "https://github.com/nalanj/mockable-modules#readme",
-	"devDependencies": {
-		"@biomejs/biome": "1.9.4",
-		"node-test-github-reporter": "1.2.0"
-	}
+  "name": "mockable-modules",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Easy to use mocking for ES Modules",
+  "exports": {
+    ".": "./index.js",
+    "./assertions": "./assertions.js",
+    "./assert": "./assert.js"
+  },
+  "scripts": {
+    "fix": "biome check --write",
+    "test": "biome check && node --test",
+    "citest": "biome check && node --test --test-reporter node-test-github-reporter"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nalanj/mockable-modules.git"
+  },
+  "keywords": ["testing", "mocking", "esmodule", "node:test"],
+  "author": "Alan Johnson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nalanj/mockable-modules/issues"
+  },
+  "homepage": "https://github.com/nalanj/mockable-modules#readme",
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "node-test-github-reporter": "1.2.0"
+  }
 }
