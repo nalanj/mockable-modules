@@ -1,7 +1,7 @@
 {
   "name": "mockable-modules",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Easy to use mocking for ES Modules",
   "exports": {
     ".": "./index.js",
@@ -17,7 +17,12 @@
     "type": "git",
     "url": "git+https://github.com/nalanj/mockable-modules.git"
   },
-  "keywords": ["testing", "mocking", "esmodule", "node:test"],
+  "keywords": [
+    "testing",
+    "mocking",
+    "esmodule",
+    "node:test"
+  ],
   "author": "Alan Johnson",
   "license": "MIT",
   "bugs": {
