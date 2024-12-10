@@ -19,7 +19,7 @@ export function mockable(fn) {
     return fn(...args);
   };
 
-  wrap.override = (t, fn) => {
+  wrap.override = (t, fn = undefined) => {
     if (!t.after) {
       throw new Error("tOverride requires a test context");
     }
