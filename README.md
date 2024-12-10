@@ -53,6 +53,8 @@ Example:
 const mockableThing = mockable(thing);
 ```
 
+*Added in v1.0.0*
+
 ### disableMockable()
 
 Disables the library in the given environment. You'll want to call this as early
@@ -63,6 +65,8 @@ Example:
 ```js
 disableMockable();
 ```
+
+*Added in v1.0.0*
 
 ### .override(t, fn)
 
@@ -81,6 +85,8 @@ test("a test", (t) => {
   // assert some things
 });
 ```
+
+*Added in v1.0.0*
 
 ## Assertions
 
@@ -108,37 +114,7 @@ test("a test", (t) => {
 });
 ```
 
-### assert.calledOnce(mockFn)
-
-Assert that `mockFn` has been called exactly once.
-
-Example:
-
-```
-test("a test", (t) => {
-  const mockFn = whatever.override(t, () => "yes");
-
-  // do some things
-
-  assert.calledOnce(mockFn);
-});
-```
-### assert.calledOnce(mockFn)
-
-Assert that `mockFn` has been called exactly once.
-
-Example:
-
-```
-test("a test", (t) => {
-  const mockFn = whatever.override(t, () => "yes");
-
-  // do some things
-
-  assert.calledOnce(mockFn);
-});
-```
-
+*Added in v1.0.0*
 
 ### assert.calledOnce(mockFn)
 
@@ -155,6 +131,43 @@ test("a test", (t) => {
   assert.calledOnce(mockFn);
 });
 ```
+*Added in v1.0.0*
+
+### assert.calledOnce(mockFn)
+
+Assert that `mockFn` has been called exactly once.
+
+Example:
+
+```
+test("a test", (t) => {
+  const mockFn = whatever.override(t, () => "yes");
+
+  // do some things
+
+  assert.calledOnce(mockFn);
+});
+```
+
+*Added in v1.0.0*
+
+### assert.calledOnce(mockFn)
+
+Assert that `mockFn` has been called exactly once.
+
+Example:
+
+```
+test("a test", (t) => {
+  const mockFn = whatever.override(t, () => "yes");
+
+  // do some things
+
+  assert.calledOnce(mockFn);
+});
+```
+
+*Added in v1.0.0*
 
 ### assert.calledTimes(mockFn, count)
 
@@ -172,6 +185,8 @@ test("a test", (t) => {
 });
 ```
 
+*Added in v1.0.0*
+
 ### assert.calledWith(mockFn, ...args)
 
 Assert that `mockFn` has been called at least once with the given `args`
@@ -187,6 +202,8 @@ test("a test", (t) => {
   assert.calledWith(mockFn, 5, 3);
 });
 ```
+
+*Added in v1.0.0*
 
 ## License
 
